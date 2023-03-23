@@ -1,25 +1,44 @@
-import os
 from BMICalc import BMI
-from CalorieCalc import Kalorid
+import tkinter as tk
+from tkinter import *
 
-# BMI
-pikkus = float(input("Palun sisestage enda pikkus (Meeter)\n: "))
-kaal = float(input("Palun sisestage oma kaal (KG)\n: "))
+# Funktsioon mis kutsub BMI klassi ja entrid kokku et kalkuleerida BMI.
+def bmi_calc(kaal_entry, pikkus_entry, result_lable):
+    kaal = float(kaal_entry.get())
+    pikkus = float(pikkus_entry.get())
+    bmi_calc = BMI(kaal, pikkus)
+    bmi = bmi_calc.calculation()
+    result_lable.config(text=f"Teie BMI on {bmi}!")
 
-ratio = BMI(pikkus, kaal)
-os.system("cls")
-ratio.calculation()
+# Tkinter akna avamine
+win = tk.Tk()
 
-cont = str(input("Kas soovite ka teada teie säilituskalorid (Kcal)?\nKui jah sisestage 'Y' kui ei siis 'N'\n: ")).lower()
-os.system("cls")
-if cont == "y":
-# Kalorid
-    pikkus = int(input("Palun sisestage enda pikkus (Sentimeeter)\n: "))
-    kaal = float(input("Palun sisestage oma kaal (KG)\n: "))
-    vanus = float(input("Mis on teie vanus\n: "))
+# Äppi geomeetriline suurus
+win.geometry("800x400")
 
-    daily = Kalorid(pikkus, kaal, vanus)
-    os.system("cls")
-    daily.säilimine()
-else:
-    quit
+# Äppi nimi
+name = tk.Label(text="Health!")
+name.pack()
+
+# Kaalu (Entry) loomine
+kaal = Entry(master=win, font=("Comicsans", 23))
+kaal.pack(side="left")
+kaal.place(x=50, y=100)
+
+# Pikkuse (Entry) loomine
+pikkus = Entry(master=win, font=("Comicsans", 23))
+pikkus.pack(side="left")
+pikkus.place(x=50, y=200)
+
+# BMI nupp
+calculation_button = tk.Button(master=win, text="Vastus!", command=lambda: bmi_calc(kaal, pikkus, result_label)) 
+calculation_button.pack()
+
+result_label = tk.Label(text="")
+result_label.pack()
+
+# Excecutable
+win.mainloop()
+
+
+
