@@ -1,5 +1,5 @@
 import os
-from BMI import BMI
+from BMICalc import BMI
 from CalorieCalc import Kalorid
 
 # BMI
