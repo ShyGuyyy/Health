@@ -5,6 +5,8 @@ from BMI_TK import BMI_TK
 
 root = Tk()
 
+root.title("HEALTH!")
+
 root.geometry("1000x400")
 
 tabControl = ttk.Notebook(root)
