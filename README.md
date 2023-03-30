@@ -25,7 +25,7 @@ BMR kui ka TDEE arvutused on mehe ja naise suhtes erinevad.
 Praegusel ajal on numbrid veel ebatäpsed aga kui sooviksite täpsust kohe praegu siis olles naine lahutage oma tulemusest 161Kcal,
 ja kui olete mees siis lahuta 5Kcal oma tulemusest.
 
-Samutika ei näe te praegu kas olete heas seisus oma BMI'ga (alakaaluline, normaalkaalus, ülekaaluline või rasvunud)
+Samutika ei näe te praegu kas olete heas seisus oma BMI'ga (alakaaluline, normaalkaalus, ülekaaluline või rasvunud).
 
 Alakaaluline < 18.5(BMI)
 
