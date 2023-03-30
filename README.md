@@ -1,3 +1,4 @@
+![HEALTH!](https://user-images.githubusercontent.com/105941046/228893918-884c3a59-e192-4279-bcde-0477c1094f9b.png)
 # HEALTH!
 
 Projekt "HEALT!" on mõeldud selleks, et nagu nipsti arvutada oma keha Body Mass Index'i(BMI), Basal Metabolic Rate(BMR) ja Total Daily Energy Expenditure(TDEE).
