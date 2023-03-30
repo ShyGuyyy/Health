@@ -83,8 +83,8 @@ class CalorieTK:
             if aktiivsus_tase == 1:
                 self.result_label.config(text=f"Teie BMR on {round(kalo, 0)}Kcal")
             elif aktiivsus_tase == 2:
-                 self.result_label.config(text=f"Teie BMR on {round(kalo * 1.5, 0)}Kcal")
+                 self.result_label.config(text=f"Teie TDEE on {round(kalo * 1.5, 0)}Kcal")
             elif aktiivsus_tase == 3:
-                 self.result_label.config(text=f"Teie BMR on {round(kalo * 1.8, 0)}Kcal")
+                 self.result_label.config(text=f"Teie TDEE on {round(kalo * 1.8, 0)}Kcal")
             elif aktiivsus_tase == 4:
-                 self.result_label.config(text=f"Teie BMR on {round(kalo * 2.2, 0)}Kcal")
+                 self.result_label.config(text=f"Teie TDEE on {round(kalo * 2.2, 0)}Kcal")
