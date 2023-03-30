@@ -3,7 +3,7 @@ class BMI:
     def __init__(self, pikkus, kaal):
         self.pikkus = pikkus
         self.kaal = kaal
-        self.calc = round (kaal / pikkus ** 2)
+        self.calc = kaal / pikkus ** 2
         
     # BMI (al kaalust kuni ül kaaluni)
     def calculation(self):   

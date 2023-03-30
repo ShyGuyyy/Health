@@ -13,7 +13,7 @@ class BMI_TK:
         self.kaal_info.place(x=50, y=75)
 
         # Kaalu (Entry) loomine
-        self.kaal = ttk.Entry(self.tab, font=("Comicsans", 23))
+        self.kaal = ttk.Entry(self.tab, font=("Arial", 23))
         self.kaal.pack(side="left")
         self.kaal.place(x=50, y=100)
 
@@ -23,7 +23,7 @@ class BMI_TK:
         self.pikkus_info.place(x=50, y=175)
 
         # Pikkuse (Entry) loomine
-        self.pikkus = ttk.Entry(self.tab, font=("Comicsans", 23))
+        self.pikkus = ttk.Entry(self.tab, font=("Arial", 23))
         self.pikkus.pack(side="left")
         self.pikkus.place(x=50, y=200)
 
@@ -33,9 +33,9 @@ class BMI_TK:
         self.calculation_button.place(x=50, y=300)
 
         # Lõpp vastus 
-        self.result_label = ttk.Label(self.tab, text="", font=("Comicsans", 36))
+        self.result_label = ttk.Label(self.tab, text="", font=("Arial", 36))
         self.result_label.pack(side="top")
-        self.result_label.place(x=425, y=140)
+        self.result_label.place(x=505, y=140)
 
     # BMI kalkulaator
     def bmi_calc(self):
@@ -43,4 +43,4 @@ class BMI_TK:
             pikkus = float(self.pikkus.get())
             bmi_calc = BMI(kaal, pikkus)
             bmi = bmi_calc.calculation()
-            self.result_label.config(text=f"Teie BMI on {bmi}!")
+            self.result_label.config(text=f"Teie BMI on {round(bmi, 0)}")

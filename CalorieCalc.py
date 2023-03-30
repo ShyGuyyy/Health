@@ -6,7 +6,7 @@ class Kalorid:
         self.vanus = vanus
         # Kalorite tarbimise säilitamine(Mees v Naine)
         # self.sugu = str(input('Kui olete mees sisestage "M" ja kui naine siis "N": ')).lower()
-        self.bmr = (str((10 * kaal) + (6.25 * pikkus) - (5 * vanus)))
+        self.bmr = (10 * kaal) + (6.25 * pikkus) - (5 * vanus)
 
     def säilimine(self):
             return self.bmr
